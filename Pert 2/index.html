@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Akili - Full-Stack Developer dan UI/UX Designer." />
+  <title>Akili — Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Kustomisasi Konfigurasi Tailwind & Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"DM Mono"', 'monospace'],
+          },
+          colors: {
+            slateDark: {
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+            },
+            cyanAccent: {
+              DEFAULT: '#06B6D4',
+              hover: '#0891B2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slateDark-900 text-slate-100 font-sans selection:bg-cyanAccent selection:text-slateDark-900">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-slateDark-900/80 backdrop-blur-md border-b border-slateDark-700">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold font-mono text-cyanAccent tracking-wider">
+        Akili<span class="text-slate-100">.dev</span>
+      </a>
+      <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-cyanAccent transition-colors">Tentang</a>
+        <a href="#skills" class="hover:text-cyanAccent transition-colors">Keahlian</a>
+        <a href="#projects" class="hover:text-cyanAccent transition-colors">Proyek</a>
+        <a href="#contact" class="hover:text-cyanAccent transition-colors">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex items-center pt-24 pb-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="font-mono text-cyanAccent mb-4 text-sm md:text-base">Halo, nama saya</p>
+      <h1 class="text-4xl md:text-7xl font-extrabold text-slate-100 mb-4 tracking-tight">
+        Akili.
+      </h1>
+      <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-6">
+        Saya merancang & membangun sistem digital.
+      </h2>
+      <p class="max-w-2xl text-slate-400 text-base md:text-lg mb-8 leading-relaxed">
+        Full-Stack Developer & UI/UX Designer yang berfokus pada pembuatan aplikasi web berkinerja tinggi, modern, dan mudah digunakan.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="bg-cyanAccent text-slateDark-900 font-semibold px-6 py-3 rounded-lg hover:bg-cyanAccent-hover transition-all duration-200">
+          Lihat Portofolio
+        </a>
+        <a href="#contact" class="border border-slateDark-700 hover:border-cyanAccent text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 px-6 border-t border-slateDark-800">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-3">
+        <span class="font-mono text-cyanAccent text-xl">01.</span> Tentang Saya
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+        <div class="md:col-span-2 space-y-4 text-slate-400 leading-relaxed">
+          <p>
+            Saya seorang pengembang perangkat lunak yang berfokus pada pembangunan aplikasi web berskala, efisien, dan memiliki pengalaman pengguna (UX) yang intuitif.
+          </p>
+          <p>
+            Pendekatan kerja saya menggabungkan struktur kode yang bersih dengan pemecahan masalah secara sistematis—mulai dari mendesain antarmuka, mengelola basis data, hingga mengoptimalkan arsitektur sistem.
+          </p>
+          <p>
+            Selain mengembangkan aplikasi web, saya juga terbiasa menangani simulasi jaringan terdistribusi, pengolahan data statistik, serta kontainerisasi aplikasi menggunakan Docker.
+          </p>
+        </div>
+        <!-- Card Profil / Avatar Placeholder -->
+        <div class="flex justify-center">
+          <div class="relative w-60 h-60 rounded-2xl bg-slateDark-800 border-2 border-cyanAccent/40 flex flex-col justify-center items-center shadow-lg hover:border-cyanAccent transition-all duration-300">
+            <span class="font-mono text-4xl text-cyanAccent font-bold mb-2">&lt;A /&gt;</span>
+            <span class="font-mono text-sm text-slate-300">Akili</span>
+            <span class="text-xs text-slate-500 font-mono mt-1">Software Engineer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-20 px-6 border-t border-slateDark-800 bg-slateDark-900/50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-3">
+        <span class="font-mono text-cyanAccent text-xl">02.</span> Keahlian & Teknologi
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Frontend -->
+        <div class="bg-slateDark-800 p-6 rounded-xl border border-slateDark-700">
+          <h3 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
+            <span class="text-cyanAccent font-mono">&gt;</span> Frontend Development
+          </h3>
+          <ul class="space-y-2 font-mono text-sm text-slate-400">
+            <li>• HTML5 / CSS3 / JavaScript (ES6+)</li>
+            <li>• React.js</li>
+            <li>• Tailwind CSS</li>
+            <li>• Responsive Web Design</li>
+          </ul>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="bg-slateDark-800 p-6 rounded-xl border border-slateDark-700">
+          <h3 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
+            <span class="text-cyanAccent font-mono">&gt;</span> Backend & Database
+          </h3>
+          <ul class="space-y-2 font-mono text-sm text-slate-400">
+            <li>• Python / REST API / GraphQL</li>
+            <li>• Node.js</li>
+            <li>• PostgreSQL</li>
+            <li>• Apache Ignite / Cluster Sync</li>
+          </ul>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="bg-slateDark-800 p-6 rounded-xl border border-slateDark-700">
+          <h3 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
+            <span class="text-cyanAccent font-mono">&gt;</span> Tools & Architecture
+          </h3>
+          <ul class="space-y-2 font-mono text-sm text-slate-400">
+            <li>• Docker & Docker Compose</li>
+            <li>• Git & GitHub</li>
+            <li>• Windows PowerShell / Linux CLI</li>
+            <li>• UI/UX Prototyping (Figma)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20 px-6 border-t border-slateDark-800">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-3">
+        <span class="font-mono text-cyanAccent text-xl">03.</span> Proyek Unggulan
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-slateDark-800 p-6 rounded-xl border border-slateDark-700 hover:border-cyanAccent transition-all duration-300">
+          <h3 class="text-xl font-bold text-slate-100 mb-2">Aplikasi Manajemen Tugas</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Platform manajemen tugas dengan kolaborasi waktu nyata dan pemantauan analitik progres kerja.
+          </p>
+          <div class="flex gap-2 font-mono text-xs text-cyanAccent">
+            <span>React</span> • <span>Tailwind</span> • <span>Node.js</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-slateDark-800 p-6 rounded-xl border border-slateDark-700 hover:border-cyanAccent transition-all duration-300">
+          <h3 class="text-xl font-bold text-slate-100 mb-2">Sistem Distribusi Data</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Simulasi pemrosesan data terdistribusi menggunakan arsitektur cluster dan protokol konsensus.
+          </p>
+          <div class="flex gap-2 font-mono text-xs text-cyanAccent">
+            <span>Python</span> • <span>Docker</span> • <span>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 px-6 border-t border-slateDark-800 bg-slateDark-900/50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 flex items-center justify-center gap-3">
+        <span class="font-mono text-cyanAccent text-xl">04.</span> Hubungi Saya
+      </h2>
+      <p class="text-slate-400 mb-8 leading-relaxed">
+        Apakah Anda memiliki ide proyek, tawaran kolaborasi, atau sekadar ingin menyapa? Silakan tinggalkan pesan melalui formulir di bawah ini.
+      </p>
+
+      <form id="dataForm" class="space-y-4 text-left bg-slateDark-800 p-8 rounded-xl border border-slateDark-700">
+        <div>
+          <label for="name" class="block font-mono text-xs text-slate-300 mb-2">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda" class="w-full bg-slateDark-900 border border-slateDark-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyanAccent transition-colors">
+        </div>
+        <div>
+          <label for="email" class="block font-mono text-xs text-slate-300 mb-2">Alamat Email</label>
+          <input type="email" id="email" name="email" required placeholder="nama@email.com" class="w-full bg-slateDark-900 border border-slateDark-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyanAccent transition-colors">
+        </div>
+        <div>
+          <label for="message" class="block font-mono text-xs text-slate-300 mb-2">Pesan</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tuliskan pesan Anda di sini..." class="w-full bg-slateDark-900 border border-slateDark-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyanAccent transition-colors"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-cyanAccent text-slateDark-900 font-bold py-3 px-6 rounded-lg hover:bg-cyanAccent-hover transition-colors">
+          Kirim Pesan
+        </button>
+      </form>
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-slate-500 font-mono text-xs border-t border-slateDark-800">
+    <p>Dirancang & Dibangun oleh Akili</p>
+  </footer>
+  
+  <script>
+  document.getElementById('dataForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Mencegah reload halaman & HTTP POST error 405
+    alert('Terima kasih! Pesan Anda berhasil dikirim.');
+    this.reset(); // Mengosongkan form kembali
+  });
+</script>
+
+</body>
+</html>
